@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <title>｡ °｡My Music Player ° ｡  °ʚ☆ɞ °｡</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="frontend.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="title-bar">
+        <span>｡ °｡My Little Player ° ｡  °ʚ☆ɞ °｡</span>
+        <div class="window-controls">
+            <button id="minimize">◎</button>
+            <button id="close" onclick="window.close()">◉</button>
+        </div>
+      </div>
+      <main>
+        <header>
+          <h1 id="title">Song title</h1>
+          <h2 id="artist">Artist</h2>
+        </header>
+        
+        <div class="song">
+          <img src="album_placeholder.jpg" alt="Album Art" />
+        </div>
+        <div class="controls">
+          <button id="back">⏮</button>
+          <button id="play">▶</button>
+          <button id="next">⏭</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "my-music-player",
+  "version": "1.0.0",
+  "description": "Music Player App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/my-simple-projects1/my-music-player.git"
+  },
+  "keywords": [],
+  "author": "Jacky Maeva Nguedia Tegomo",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://gitlab.com/my-simple-projects1/my-music-player/issues"
+  },
+  "homepage": "https://gitlab.com/my-simple-projects1/my-music-player#readme",
+  "devDependencies": {
+    "electron": "^40.7.0",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "com.maevaa.musicplayer",
+    "productName": "Music Player",
+    "win": {
+      "target": "nsis",
+      "signAndEditExecutable": false
+    },
+    "extraResources": [
+      {
+        "from": "dist-python/",
+        "to": "python/"
+      },
+      {
+        "from": "audio_files/",
+        "to": "audio_files/"
+      }
+    ]
+  }
+}
